@@ -10,6 +10,12 @@ projects:
 components:
   - id: redhat/quarkus-java11/latest
     type: chePlugin
+  - id: redhat/java11/latest
+    type: chePlugin
+  - id: redhat/vscode-yaml/latest
+    type: chePlugin
+  - id: redhat/vscode-xml/latest
+    type: chePlugin
   - mountSources: true
     endpoints:
       - name: quarkus-development-server
