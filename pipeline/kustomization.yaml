@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: eventing-demo
+
+# Workspace PVC, Pipeline, and Pipeline Run
+resources:
+  - workspace-pvc.yaml
+  - quarkus-native-task.yaml
+  - quarkus-native-pipeline.yaml

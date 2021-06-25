@@ -7,10 +7,10 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
 
 @QuarkusTest
-public class GreetingResourceTest {
+public class MathResourceTest {
 
     @Test
-    public void testHelloEndpoint() {
+    public void testEvaluateEndpoint() {
         given()
           .when().get("/math?x=10&y=5")
           .then()
