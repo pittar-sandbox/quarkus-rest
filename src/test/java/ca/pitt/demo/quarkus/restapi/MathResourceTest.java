@@ -12,7 +12,7 @@ public class MathResourceTest {
     @Test
     public void testEvaluateEndpoint() {
         given()
-          .when().get("/math?x=10&y=5")
+          .when().get("/?x=10&y=5")
           .then()
              .statusCode(200)
              .body(is("10.0 x 5.0 = 50.0"));
