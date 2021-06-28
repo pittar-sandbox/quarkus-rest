@@ -54,7 +54,9 @@ spec:
         kind: ClusterTask
       params:
         - name: IMAGE
-          value: image-registry.openshift-image-registry.svc:5000/$(params.namespace)/$(params.app-name):latest
+          value: quay.io/pittar/serverless-quarkus:latest
+        # - name: IMAGE
+        #   value: image-registry.openshift-image-registry.svc:5000/$(params.namespace)/$(params.app-name):latest
         - name: DOCKERFILE
           value: ./Containerfile
       workspaces:

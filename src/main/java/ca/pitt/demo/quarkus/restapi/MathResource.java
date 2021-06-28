@@ -24,6 +24,7 @@ public class MathResource {
         } else {
             response += x + " + " + y + " = " + (x + y);
         }
+        System.err.println(response);
         return response;
     }
 }
