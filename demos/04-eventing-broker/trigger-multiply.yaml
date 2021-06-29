@@ -1,0 +1,15 @@
+apiVersion: eventing.knative.dev/v1
+kind: Trigger
+metadata:
+  name: default-multiply
+spec:
+  broker: default
+  filter:
+    attributes:
+      operation: multiply
+      service: math
+  subscriber:
+    ref:
+     apiVersion: serving.knative.dev/v1
+     kind: Service
+     name: serverless-multiply
