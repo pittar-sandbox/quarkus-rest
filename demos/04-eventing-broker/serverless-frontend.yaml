@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: serverless-frontend 
+spec:
+  template:
+    spec:
+      containers:
+        - image: quay.io/pittar/serverless-frontend:latest 
+          env:
+            - name: CHANNEL_URL 
+              value: "http://broker-ingress.knative-eventing.svc.cluster.local/test5/default"

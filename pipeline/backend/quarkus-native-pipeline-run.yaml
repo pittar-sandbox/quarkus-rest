@@ -8,13 +8,13 @@ spec:
     name: quarkus-native-pipeline
   params:
     - name: "git-url"
-      value: "https://github.com/pittar-sandbox/quarkus-rest.git"
+      value: "https://github.com/pittar-sandbox/serverless-quarkus.git"
     - name: "git-revision"
       value: "main"
     - name: "app-name"
       value: "quarkus-native-app"
     - name: "namespace"
-      value: "eventing-demo"
+      value: "serverless-cicd"
   workspaces:
     - name: build-workspace
       persistentVolumeClaim:
